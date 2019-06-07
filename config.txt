@@ -1,0 +1,58 @@
+{
+  "inbounds": [
+    {
+      "port": 40982,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "05f8c5ec-fc55-4584-8a3c-2160989d1898",
+            "level": 1,
+            "alterId": 64
+          }
+        ]
+      }
+    },
+    {
+      "settings": {
+        "clients": [
+          {
+            "id": "24f850d4-5a13-cac0-b644-76217d810a0f",
+            "alterId": 64
+          }
+        ]
+      },
+      "protocol": "vmess",
+      "port": 80,
+      "streamSettings": {
+        "wsSettings": {
+          "path": "/bibiv",
+          "headers": {}
+        },
+        "network": "ws"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
