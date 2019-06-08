@@ -1,19 +1,6 @@
 {
   "inbounds": [
     {
-      "port": 40982,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "05f8c5ec-fc55-4584-8a3c-2160989d1898",
-            "level": 1,
-            "alterId": 64
-          }
-        ]
-      }
-    },
-    {
       "settings": {
         "clients": [
           {
@@ -24,6 +11,7 @@
       },
       "protocol": "vmess",
       "port": 10010,
+      "listen": "127.0.0.1",
       "streamSettings": {
         "wsSettings": {
           "path": "/bibiv",
