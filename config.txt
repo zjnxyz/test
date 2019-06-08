@@ -23,7 +23,7 @@
         ]
       },
       "protocol": "vmess",
-      "port": 80,
+      "port": 10010,
       "streamSettings": {
         "wsSettings": {
           "path": "/bibiv",
